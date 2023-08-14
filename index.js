@@ -6,6 +6,28 @@ const pool = require("./db");
 //middlewares
 app.use(express.json());
 
+
+//Creating Test table
+async function createTable() {
+    try {
+        const query = `
+        CREATE TABLE users (
+        user_id SERIAL PRIMARY KEY,
+        firstname VARCHAR(255),
+        lastname VARCHAR(255)
+        );
+      `;
+
+        const client = await pool.connect();
+        await client.query(query);
+        client.release();
+        console.log('Users table created or already exists');
+    } catch (error) {
+        const errorMessage = error.message.split('\n')[0];
+        console.error('Error creating table:', errorMessage);
+    }
+}
+
 //Routes
 app.post("/api/test", async (req, res) => {
     try {
@@ -29,5 +51,6 @@ app.post("/api/test", async (req, res) => {
 });
 
 app.listen(5000, () => {
+    createTable();
     console.log("Server started");
 });
