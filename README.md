@@ -40,7 +40,12 @@ PORT=5000
 
 
 ```
+4. Run the `index.js` file using `nodemon` to start Express server:
+```
+npm install -g nodemon  # Install nodemon globally (if not already installed)
+nodemon index.js
 
+```
 ##### **Usage**
 Access your API endpoints using a tool like **Postman** or by making HTTP requests from your frontend application.
 [Postman Download](https://www.postman.com/downloads/)
