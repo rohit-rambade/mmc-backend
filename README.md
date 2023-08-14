@@ -47,5 +47,5 @@ nodemon index.js
 
 ```
 ##### **Usage**
-Access your API endpoints using a tool like **Postman** or by making HTTP requests from your frontend application.
+Access API endpoints using a tool like **Postman** or by making HTTP requests from frontend application.
 [Postman Download](https://www.postman.com/downloads/)
