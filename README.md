@@ -41,7 +41,9 @@ Once Installed, check the instalation by running the followiung commands from yo
 
 - Leave rest to default and save your Database
 
-- Now select the database which you created and go to Schemas -> Table -> User -> Query tool
+- Now select the database which you created Right Click -> Query tool
+   ![image](https://github.com/rohit-rambade/mmc-backend/assets/86614477/df054762-93dd-4dac-8e3e-10655d0f8e3b)
+
 
 - Copy Paste the below query in Query Editor
 
